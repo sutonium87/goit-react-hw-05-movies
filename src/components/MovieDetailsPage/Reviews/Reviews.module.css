@@ -1,0 +1,58 @@
+.reviews {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  list-style: none; /* Remove list-style */
+  max-width: 500px; /* Set maximum width */
+  width: 100%; /* Set width to 100% */
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    max-width: none; /* Remove maximum width */
+  }
+}
+
+.reviews__item {
+  padding: 20px; /* Set padding */
+  border-radius: 4px; /* Add rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Add box shadow */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.reviews__item:not(:last-child) {
+  margin-bottom: 20px; /* Add margin at the bottom for all items except the last one */
+}
+
+.author_info {
+  display: flex; /* Display as a flex container */
+  align-items: center; /* Align items vertically to the center */
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.avatar {
+  width: 60px; /* Set width */
+  height: 60px; /* Set height */
+  object-fit: cover; /* Apply object-fit property */
+  border-radius: 4px; /* Add rounded corners */
+  margin-right: 20px; /* Add margin on the right */
+}
+
+.author {
+  font-size: 20px; /* Set font size */
+  margin-bottom: 5px; /* Add margin at the bottom */
+}
+
+.date {
+  font-size: 12px; /* Set font size */
+  color: grey; /* Set text color to grey */
+}
+
+.read_more_less__more {
+  color: #7fffd4; /* Set text color to teal */
+}
+
+.read_more_less__less {
+  color: grey; /* Set text color to grey */
+}

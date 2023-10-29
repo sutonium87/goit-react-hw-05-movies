@@ -1,0 +1,21 @@
+.containerW {
+  padding-left: 15px; /* Add left padding */
+  padding-right: 15px; /* Add right padding */
+  margin-left: auto; /* Center horizontally (auto margin) */
+  margin-right: auto; /* Center horizontally (auto margin) */
+  display: flex; /* Display as a flex container */
+  flex-direction: column; /* Set flex direction to column */
+  align-items: center; /* Align items to the center */
+}
+
+@media screen and (min-width: 768px) {
+  .containerW {
+    width: 768px; /* Set width to 768px on screens wider than 768px */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .containerW {
+    width: 1200px; /* Set width to 1200px on screens wider than 1200px */
+  }
+}

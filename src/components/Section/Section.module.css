@@ -1,0 +1,4 @@
+.section {
+  padding-top: 30px; /* Add 30 pixels of padding to the top of elements with the class 'section' */
+  padding-bottom: 30px; /* Add 30 pixels of padding to the bottom of elements with the class 'section' */
+}

@@ -1,0 +1,131 @@
+.item {
+  position: relative; /* Set the position of the item element to relative */
+  max-width: 500px; /* Set a maximum width of 500px */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Add a box shadow */
+  border-radius: 4px; /* Set a border radius of 4px */
+  margin-top: 30px; /* Add a margin of 30px at the top */
+  list-style: none; /* Remove list-style */
+  transition: all 0.3s; /* Apply a smooth transition to all properties */
+}
+
+.item:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Change box shadow on hover */
+}
+
+.item:hover .title,
+.link:focus .title {
+  color: #7fffd4; /* Change the color of the title on hover or focus */
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    flex-basis: calc(
+      100% / 2 - 30px
+    ); /* Set the flex-basis for screens with a width of at least 768px */
+    margin-left: 30px; /* Add a left margin of 30px */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item {
+    flex-basis: calc(
+      100% / 4 - 30px
+    ); /* Set the flex-basis for screens with a width of at least 1200px */
+  }
+}
+
+.link {
+  display: inline-block; /* Display the link as an inline block */
+  color: black; /* Set the text color to black */
+}
+
+.link:hover {
+  color: black; /* Change text color on hover */
+  text-decoration: none; /* Remove text decoration on hover */
+}
+
+.link:focus {
+  outline: none; /* Remove the outline on focus */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Add a box shadow on focus */
+}
+
+.image_wrapper {
+  position: relative; /* Set the position of the image wrapper to relative */
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 4px 4px 0 0; /* Set border radius for the image wrapper */
+}
+
+.image_wrapper img {
+  vertical-align: top; /* Align the image vertically to the top */
+  object-fit: cover; /* Set the object fit property to cover */
+  max-width: 100%; /* Set the maximum width to 100% */
+  transition: all 0.3s; /* Apply a smooth transition to all properties */
+}
+
+@media screen and (min-width: 768px) {
+  .image_wrapper img {
+    height: 531px; /* Set the height for screens with a width of at least 768px */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image_wrapper img {
+    height: 405px; /* Set the height for screens with a width of at least 1200px */
+  }
+}
+
+.item:hover img,
+.link:focus img {
+  border-radius: 4px 4px 0 0; /* Set border radius on hover or focus */
+  transform: scale(1.1); /* Apply a scale transformation on hover or focus */
+}
+
+.description {
+  display: flex; /* Display the description as a flex container */
+  flex-direction: column; /* Set the flex direction to column */
+  padding: 20px; /* Add padding of 20px */
+}
+
+.title {
+  font-size: 14px; /* Set the font size to 14px */
+  margin-bottom: 5px; /* Add a margin at the bottom of the title */
+  transition: all 0.3s; /* Apply a smooth transition to all properties */
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    /* Adding ... to long strings */
+    width: 314px; /* Set the width for screens with a width of at least 768px */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show an ellipsis for truncated text */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    width: 230px; /* Set the width for screens with a width of at least 1200px */
+  }
+}
+
+.genres {
+  display: flex; /* Display the genres as a flex container */
+  list-style: none; /* Remove list-style */
+  padding: 0; /* Remove padding */
+  margin-bottom: 5px; /* Add a margin at the bottom */
+  color: rgb(90, 90, 90); /* Set the text color */
+}
+
+.genres__item {
+  font-size: 12px; /* Set the font size to 12px for genre items */
+}
+
+.info {
+  font-size: 12px; /* Set the font size to 12px for info */
+  color: rgb(90, 90, 90); /* Set the text color for info */
+}
+
+.rating {
+  color: #7fffd4; /* Set the text color for rating to a specific color */
+  margin-right: 10px; /* Add right margin of 10px to the rating */
+}

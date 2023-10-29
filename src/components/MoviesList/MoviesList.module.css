@@ -1,0 +1,13 @@
+.gallery {
+  margin: 0; /* Reset margin to 0 */
+  padding: 0; /* Reset padding to 0 */
+  margin-top: -30px; /* Add a negative margin to the top, effectively offsetting the previous margin */
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    display: flex; /* Display the gallery as a flex container */
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    margin-left: -30px; /* Add a negative margin to the left, effectively offsetting the previous margin */
+  }
+}

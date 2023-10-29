@@ -1,0 +1,53 @@
+.link,
+.link__active {
+  position: relative; /* Set position relative for pseudo-elements */
+  font-family: 'Varela Round'; /* Specify font family */
+  font-size: 18px; /* Set font size */
+  line-height: 0; /* Adjust line height */
+  margin-left: 30px; /* Add left margin */
+  transition: all 0.2s; /* Apply a smooth transition to all properties */
+  padding: 22px 0; /* Add padding for spacing */
+}
+
+.link {
+  color: black; /* Set text color for non-active links */
+}
+
+.link__active {
+  color: #7fffd4; /* Set text color for active links */
+}
+
+.link:hover,
+.link__active:hover {
+  color: #7fffd4; /* Change text color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.link::after,
+.link__active::after {
+  content: ''; /* Create an empty pseudo-element */
+  position: absolute; /* Position the pseudo-element absolutely */
+  bottom: 0; /* Align the pseudo-element to the bottom */
+  left: 0; /* Align the pseudo-element to the left */
+  width: 100%; /* Set the width to 100% of the link */
+  height: 3px; /* Specify height for the underline */
+  border: 1px solid #7fffd4; /* Add a border to create an underline effect */
+  border-radius: 2px; /* Round the border */
+  background-color: #7fffd4; /* Set background color for the underline */
+  transform-origin: bottom left; /* Define the transform origin */
+}
+
+.link::after {
+  transition: transform 0.25s ease-out; /* Add a transform transition */
+  transform: scaleX(0); /* Initially scale the underline to 0 width */
+}
+
+.link__active::after {
+  opacity: 1; /* Make the underline fully visible for active links */
+  transform: scaleX(1); /* Expand the underline width for active links */
+}
+
+.link:hover::after {
+  transform: scaleX(1); /* Expand the underline width on hover */
+  transform-origin: bottom left; /* Define the transform origin for hover */
+}

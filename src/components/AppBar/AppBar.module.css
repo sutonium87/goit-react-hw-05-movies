@@ -1,0 +1,37 @@
+.header {
+  padding: 20px 0; /* Add top and bottom padding */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Add box shadow */
+}
+
+.navigation {
+  padding-left: 15px; /* Add left padding */
+  padding-right: 15px; /* Add right padding */
+  margin-left: auto; /* Center horizontally (auto margin) */
+  margin-right: auto; /* Center horizontally (auto margin) */
+  display: flex; /* Display as a flex container */
+  flex-direction: row; /* Set flex direction to row */
+  align-items: center; /* Align items to the center */
+  justify-content: space-between; /* Add space between items */
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    max-width: 530px; /* Set maximum width on screens up to 767px */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    width: 768px; /* Set width to 768px on screens wider than 768px */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    width: 1200px; /* Set width to 1200px on screens wider than 1200px */
+  }
+}
+
+.menu {
+  display: flex; /* Display menu as a flex container */
+}

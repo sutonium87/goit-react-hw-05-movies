@@ -1,0 +1,173 @@
+.cast {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  list-style: none; /* Remove list-style */
+  display: flex; /* Display as a flex container */
+  flex-wrap: wrap; /* Enable flex items to wrap */
+  margin-top: -30px; /* Adjust margin to counteract negative margin of items */
+  margin-left: -30px; /* Adjust margin to counteract negative margin of items */
+  max-width: 500px; /* Set maximum width */
+}
+
+@media screen and (min-width: 768px) {
+  .cast {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    max-width: none; /* Remove maximum width */
+  }
+}
+
+.item {
+  display: flex; /* Display as a flex container */
+  flex-direction: column; /* Set flex-direction to column */
+  align-items: center; /* Align items to the center */
+  margin-top: 30px; /* Add margin at the top */
+  margin-left: 30px; /* Add margin at the left */
+  flex-basis: calc(100% / 2 - 30px); /* Set flex basis */
+}
+
+@media screen and (min-width: 500px) {
+  .item {
+    flex-basis: calc(100% / 3 - 30px); /* Adjust flex basis */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    flex-basis: calc(100% / 4 - 30px); /* Adjust flex basis */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item {
+    flex-basis: calc(100% / 6 - 30px); /* Adjust flex basis */
+  }
+}
+
+.link {
+  width: 100%; /* Set width to 100% */
+  border-radius: 4px; /* Add rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Add box shadow */
+  transition: all 0.3s; /* Apply a transition effect */
+}
+
+.link:hover,
+.link:focus {
+  outline: none; /* Remove outline on hover/focus */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Add box shadow on hover/focus */
+  text-decoration: none; /* Remove text underline */
+}
+
+.link:hover .name,
+.link:focus .name {
+  color: #7fffd4; /* Change text color on hover/focus */
+}
+
+.image_wrapper {
+  position: relative; /* Set position to relative */
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 4px 4px 0 0; /* Add rounded corners */
+}
+
+.image_wrapper img {
+  vertical-align: top; /* Set vertical alignment */
+  object-fit: cover; /* Set object-fit property */
+  max-width: 100%; /* Set maximum width */
+  transition: all 0.3s; /* Apply a transition effect */
+}
+
+.link:hover img,
+.link:focus img {
+  border-radius: 4px 4px 0 0; /* Adjust border-radius on hover/focus */
+  transform: scale(1.1); /* Apply scaling effect on hover/focus */
+}
+
+.image {
+  object-fit: cover; /* Set object-fit property */
+  object-position: top; /* Set object-position to top */
+  border-radius: 4px 4px 0 0; /* Add rounded corners */
+  height: 170px; /* Set height */
+  width: 100%; /* Set width to 100% */
+  transition: all 0.3s; /* Apply a transition effect */
+}
+
+@media screen and (min-width: 400px) {
+  .image {
+    height: 240px; /* Adjust height on larger screens */
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .image {
+    height: 170px; /* Adjust height on larger screens */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    height: 220px; /* Adjust height on larger screens */
+  }
+}
+
+.name_wrapper {
+  display: flex; /* Display as a flex container */
+  flex-direction: column; /* Set flex-direction to column */
+  align-items: center; /* Align items to the center */
+  padding: 10px; /* Set padding */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.name,
+.character {
+  font-size: 12px; /* Set font size */
+  text-align: center; /* Set text alignment to center */
+  transition: all 0.3s; /* Apply a transition effect */
+  width: 90px; /* Set width */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis to overflowing text */
+}
+
+@media screen and (min-width: 350px) {
+  .name,
+  .character {
+    width: 110px; /* Adjust width */
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .name,
+  .character {
+    width: 130px; /* Adjust width */
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .name,
+  .character {
+    width: 110px; /* Adjust width */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .name,
+  .character {
+    width: 130px; /* Adjust width */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .name,
+  .character {
+    width: 140px; /* Adjust width */
+  }
+}
+
+.name {
+  font-weight: bold; /* Set font weight to bold */
+  color: black; /* Set text color to black */
+}
+
+.character {
+  color: grey; /* Set text color to grey */
+}

@@ -1,0 +1,32 @@
+.logo {
+  display: flex; /* Use flex layout for logo */
+  align-items: center; /* Center items vertically */
+  cursor: pointer; /* Change cursor on hover to indicate interactivity */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+.logo:hover,
+.logo:focus {
+  text-decoration: none; /* Remove underline on hover and focus */
+}
+
+.text {
+  display: none; /* Initially hide the text element */
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    display: inline; /* Display the text element on larger screens */
+    font-family: 'Varela Round'; /* Specify font family */
+    margin-top: 3px; /* Add top margin */
+    margin-left: 10px; /* Add left margin */
+    font-size: 26px; /* Set font size */
+    line-height: 0; /* Adjust line height */
+    color: black; /* Set text color for the text element */
+    transition: all 0.3s; /* Apply a smooth transition to all properties */
+  }
+
+  .logo:hover .text {
+    color: #7fffd4; /* Change text color on hover for the text element */
+  }
+}

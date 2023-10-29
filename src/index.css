@@ -1,0 +1,40 @@
+@import-normalize; /* Bring in normalize.css styles */
+
+body {
+  margin: 0; /* Reset margin for the entire document */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* Set a default font for the body text */
+  -webkit-font-smoothing: antialiased; /* Improve font rendering on webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Improve font rendering on macOS browsers */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; /* Define a font for code elements */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; /* Reset margin for headings and paragraphs */
+}
+
+html {
+  box-sizing: border-box; /* Set the box model to border-box for the entire HTML document */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; /* Inherit the box model setting for all elements and pseudo-elements */
+}
+
+img {
+  display: block; /* Make images a block element, so they don't have extra space below */
+  height: auto; /* Ensure images maintain their aspect ratio */
+}
